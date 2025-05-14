@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation</title>
+<style>
+    body{
+        background-color: black;
+        margin: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+.image{
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.image>img{
+    transform-origin: center;
+    transform: perspective(800px) rotateY(20deg);
+    transition: 0.5s;
+    max-width: 350px;
+    /* -webkit-box-reflect: below 10px linear-gradient (transparent,transparent,white); */
+    box-shadow: 5px 5px 20px 2px goldenrod;
+}
+.main:hover img {
+opacity: 0.1;
+}
+.main img:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 1;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between; 
+}
+</style>
+
+</head>
+<body>
+    <div class="main">
+        <div class="image">
+        <img src="images/sneakers.jfif">
+        <img src="images/sneakers.jfif">
+        <img src="images/sneakers.jfif">
+        </div>
+    </div>
+    
+</body>
+</html>
